@@ -1,0 +1,64 @@
+* {
+  box-sizing: border-box;
+}
+html,
+body,
+#root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+input,
+select,
+textarea,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  outline: none;
+}
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: var(--border-strong);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  background-clip: padding-box;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+input[type="checkbox"] {
+  accent-color: var(--accent);
+  width: 15px;
+  height: 15px;
+  cursor: pointer;
+}
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+@media (max-width: 880px) {
+  .sidebar {
+    display: none !important;
+  }
+  .drawer-panel {
+    width: 100vw !important;
+  }
+  .hide-sm {
+    display: none !important;
+  }
+}
+@media (max-width: 680px) {
+  .contact-list {
+    width: 160px !important;
+  }
+}

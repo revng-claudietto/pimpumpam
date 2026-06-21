@@ -1,0 +1,13 @@
+.venv/
+__pycache__/
+*.pyc
+*.db
+.env
+result
+result-*
+.pytest_cache/
+.ruff_cache/
+# PyInstaller (standalone backend) outputs
+/dist/
+/build/
+/pimpumpam.spec
